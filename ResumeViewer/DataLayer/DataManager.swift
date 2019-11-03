@@ -12,8 +12,8 @@ class DataManager {
     
     let fileManager = FileManager.default
     
-    func getResumeFromDocumentsFolder(filename: String, completion: @escaping (Error?, Resume?) -> Void) {
-        if doesFileExistInDocuments(filename: filename) {
+    func getResumeFromDocumentsFolder(filename: String, completion: @escaping (IOError?, Resume?) -> Void) {
+        if fileExistsInDocuments(filename: filename) {
 //            do {
 //                let resume = try JSONDecoder().decode(Resume.self, from: data)
 //                completion(nil, resume)
@@ -22,11 +22,11 @@ class DataManager {
 //                completion(error, nil)
 //            }
         } else {
-            completion(FileErrors.fileDoesNotExist(Constants.ErrorMessaages.fileDoesNotExist), nil)
+            completion(IOError.fileDoesNotExist, nil)
         }
     }
     
-    private func doesFileExistInDocuments(filename: String) -> Bool {
+    func fileExistsInDocuments(filename: String) -> Bool {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let url = NSURL(fileURLWithPath: path)
         if let pathComponent = url.appendingPathComponent(filename) {
@@ -39,5 +39,15 @@ class DataManager {
         } else {
             return true
         }
+    }
+    
+    func parseJSON(data: Data) -> Resume? {
+        return try? JSONDecoder().decode(Resume.self, from: data)
+    }
+}
+
+class MockDataManager: DataManager {
+    override func getResumeFromDocumentsFolder(filename: String, completion: @escaping (IOError?, Resume?) -> Void) {
+        completion(nil,nil)
     }
 }

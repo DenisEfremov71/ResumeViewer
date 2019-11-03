@@ -13,6 +13,8 @@ class SectionsViewController: UITableViewController {
     // MARK: - Properties
     
     let presenter = SectionsPresenter()
+    var selectedSection: Section = .contactInformation
+    //var resume = Resume()
     
     let sections: [String] = ["Overview", "Categories"]
     let items: [[String]] = [
@@ -22,6 +24,14 @@ class SectionsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.getResume { (success, error) in
+            if let error = error {
+                UiHelper.showAlert(for: self, with: "\(Constants.ErrorMessages.couldNotGetResume) Description: \(error.localizedDescription)")
+            }
+            if success == false {
+                UiHelper.showAlert(for: self, with: "\(Constants.ErrorMessages.noResumeReturned)")
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -49,6 +59,11 @@ class SectionsViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let _ = presenter.resume else {
+            UiHelper.showAlert(for: self, with: Constants.ErrorMessages.couldNotGetResume)
+            return
+        }
+        selectedSection = Section(rawValue: items[indexPath.section][indexPath.row])!
         performSegue(withIdentifier: "showDetails", sender: nil)
     }
  
@@ -88,14 +103,13 @@ class SectionsViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! DetailsViewController
+        vc.presenter = self.presenter
+        vc.section = selectedSection
     }
-    */
 
 }

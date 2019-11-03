@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726ACFB0236CFC5C00E54708 /* UiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFAF236CFC5C00E54708 /* UiHelper.swift */; };
+		726ACFB2236D001700E54708 /* DataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFB1236D001700E54708 /* DataManagerTests.swift */; };
+		726ACFB4236D008700E54708 /* resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 726ACFB3236D008700E54708 /* resume.json */; };
+		726ACFB7236D080A00E54708 /* resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 726ACFB6236D080A00E54708 /* resume.json */; };
+		726ACFB9236DCAFD00E54708 /* ResumeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFB8236DCAFD00E54708 /* ResumeServiceTests.swift */; };
+		726ACFBC236DFDC900E54708 /* ContactInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFBB236DFDC900E54708 /* ContactInformation.swift */; };
+		726ACFC0236E10D200E54708 /* WorkExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFBF236E10D200E54708 /* WorkExperienceView.swift */; };
+		726ACFC5236E191000E54708 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFC4236E191000E54708 /* UIImageView+Extension.swift */; };
+		726ACFCB236E742600E54708 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFCA236E742600E54708 /* EducationView.swift */; };
+		726ACFCD236E746000E54708 /* HighlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFCC236E746000E54708 /* HighlightsView.swift */; };
+		726ACFCF236E747400E54708 /* ReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726ACFCE236E747400E54708 /* ReferencesView.swift */; };
 		7BF8EF88236C61ED0067B264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8EF87236C61ED0067B264 /* AppDelegate.swift */; };
-		7BF8EF8A236C61ED0067B264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF8EF89236C61ED0067B264 /* ViewController.swift */; };
 		7BF8EF8D236C61ED0067B264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF8EF8B236C61ED0067B264 /* Main.storyboard */; };
 		7BF8EF8F236C61EE0067B264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF8EF8E236C61EE0067B264 /* Assets.xcassets */; };
 		7BF8EF92236C61EE0067B264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF8EF90236C61EE0067B264 /* LaunchScreen.storyboard */; };
@@ -42,9 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726ACFAF236CFC5C00E54708 /* UiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UiHelper.swift; path = ResumeViewer/UiHelper.swift; sourceTree = SOURCE_ROOT; };
+		726ACFB1236D001700E54708 /* DataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTests.swift; sourceTree = "<group>"; };
+		726ACFB3236D008700E54708 /* resume.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resume.json; sourceTree = "<group>"; };
+		726ACFB6236D080A00E54708 /* resume.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resume.json; sourceTree = "<group>"; };
+		726ACFB8236DCAFD00E54708 /* ResumeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeServiceTests.swift; sourceTree = "<group>"; };
+		726ACFBB236DFDC900E54708 /* ContactInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformation.swift; sourceTree = "<group>"; };
+		726ACFBF236E10D200E54708 /* WorkExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceView.swift; sourceTree = "<group>"; };
+		726ACFC4236E191000E54708 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		726ACFCA236E742600E54708 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		726ACFCC236E746000E54708 /* HighlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsView.swift; sourceTree = "<group>"; };
+		726ACFCE236E747400E54708 /* ReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesView.swift; sourceTree = "<group>"; };
 		7BF8EF84236C61ED0067B264 /* ResumeViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF8EF87236C61ED0067B264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BF8EF89236C61ED0067B264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BF8EF8C236C61ED0067B264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BF8EF8E236C61EE0067B264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF8EF91236C61EE0067B264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +110,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		726ACFB5236D07ED00E54708 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				726ACFB6236D080A00E54708 /* resume.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		726ACFBA236DFDA000E54708 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				726ACFBB236DFDC900E54708 /* ContactInformation.swift */,
+				726ACFCA236E742600E54708 /* EducationView.swift */,
+				726ACFCC236E746000E54708 /* HighlightsView.swift */,
+				726ACFCE236E747400E54708 /* ReferencesView.swift */,
+				726ACFBF236E10D200E54708 /* WorkExperienceView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		726ACFC3236E18FA00E54708 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				726ACFC4236E191000E54708 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7BF8EF7B236C61ED0067B264 = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +161,10 @@
 		7BF8EF86236C61ED0067B264 /* ResumeViewer */ = {
 			isa = PBXGroup;
 			children = (
+				726ACFC3236E18FA00E54708 /* Extensions */,
 				7BF8EF87236C61ED0067B264 /* AppDelegate.swift */,
 				7BF8EF8E236C61EE0067B264 /* Assets.xcassets */,
+				726ACFBA236DFDA000E54708 /* CustomViews */,
 				7BF8EFB7236C625E0067B264 /* DataLayer */,
 				7BF8EFB9236C626E0067B264 /* Helpers */,
 				7BF8EF93236C61EE0067B264 /* Info.plist */,
@@ -123,7 +173,7 @@
 				7BF8EFB8236C62660067B264 /* Models */,
 				7BF8EFB6236C624C0067B264 /* NetworkLayer */,
 				7BF8EFC2236CA42B0067B264 /* Presenters */,
-				7BF8EF89236C61ED0067B264 /* ViewController.swift */,
+				726ACFB5236D07ED00E54708 /* Resources */,
 				7BF8EFB5236C62400067B264 /* ViewControllers */,
 			);
 			path = ResumeViewer;
@@ -132,8 +182,11 @@
 		7BF8EF9B236C61EE0067B264 /* ResumeViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BF8EF9C236C61EE0067B264 /* ResumeViewerTests.swift */,
 				7BF8EF9E236C61EE0067B264 /* Info.plist */,
+				726ACFB3236D008700E54708 /* resume.json */,
+				726ACFB1236D001700E54708 /* DataManagerTests.swift */,
+				7BF8EF9C236C61EE0067B264 /* ResumeViewerTests.swift */,
+				726ACFB8236DCAFD00E54708 /* ResumeServiceTests.swift */,
 			);
 			path = ResumeViewerTests;
 			sourceTree = "<group>";
@@ -185,6 +238,7 @@
 		7BF8EFB9236C626E0067B264 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				726ACFAF236CFC5C00E54708 /* UiHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -301,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726ACFB7236D080A00E54708 /* resume.json in Resources */,
 				7BF8EF92236C61EE0067B264 /* LaunchScreen.storyboard in Resources */,
 				7BF8EF8F236C61EE0067B264 /* Assets.xcassets in Resources */,
 				7BF8EF8D236C61ED0067B264 /* Main.storyboard in Resources */,
@@ -311,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726ACFB4236D008700E54708 /* resume.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,15 +384,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726ACFBC236DFDC900E54708 /* ContactInformation.swift in Sources */,
 				7BF8EFC4236CA4490067B264 /* SectionsPresenter.swift in Sources */,
-				7BF8EF8A236C61ED0067B264 /* ViewController.swift in Sources */,
+				726ACFC5236E191000E54708 /* UIImageView+Extension.swift in Sources */,
 				7BF8EFCC236CB2650067B264 /* Enums.swift in Sources */,
 				7BF8EFC1236CA1820067B264 /* Resume.swift in Sources */,
 				7BF8EFC8236CA4870067B264 /* DataManager.swift in Sources */,
 				7BF8EFBB236C64030067B264 /* SectionsViewController.swift in Sources */,
+				726ACFCD236E746000E54708 /* HighlightsView.swift in Sources */,
+				726ACFB0236CFC5C00E54708 /* UiHelper.swift in Sources */,
 				7BF8EF88236C61ED0067B264 /* AppDelegate.swift in Sources */,
 				7BF8EFBF236C64420067B264 /* DetailsViewController.swift in Sources */,
 				7BF8EFC6236CA45E0067B264 /* ResumeService.swift in Sources */,
+				726ACFCF236E747400E54708 /* ReferencesView.swift in Sources */,
+				726ACFCB236E742600E54708 /* EducationView.swift in Sources */,
+				726ACFC0236E10D200E54708 /* WorkExperienceView.swift in Sources */,
 				7BF8EFCA236CAC050067B264 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726ACFB2236D001700E54708 /* DataManagerTests.swift in Sources */,
+				726ACFB9236DCAFD00E54708 /* ResumeServiceTests.swift in Sources */,
 				7BF8EF9D236C61EE0067B264 /* ResumeViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

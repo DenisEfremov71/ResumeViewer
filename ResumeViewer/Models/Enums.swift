@@ -8,6 +8,15 @@
 
 import Foundation
 
-enum FileErrors: Error {
-    case fileDoesNotExist(String)
+enum IOError: Error {
+    case fileDoesNotExist
+    case otherIOError
+}
+
+enum Section: String {
+    case contactInformation = "Contact Information"
+    case highlights         = "Highlights"
+    case workExperience     = "Work Experience"
+    case education          = "Education"
+    case references         = "References"
 }
