@@ -1,16 +1,7 @@
-//
-//  Enums.swift
-//  ResumeViewer
-//
-//  Created by Denis Efremov on 2019-11-01.
-//  Copyright © 2019 Denis Efremov. All rights reserved.
-//
-
 import Foundation
 
-enum IOError: Error {
-    case fileDoesNotExist
-    case otherIOError
+enum ResumeViewerError: Error {
+    case resumeFetchError
 }
 
 enum Section: String {

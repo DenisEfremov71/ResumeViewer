@@ -1,11 +1,3 @@
-//
-//  ContactInformation.swift
-//  ResumeViewer
-//
-//  Created by Denis Efremov on 2019-11-02.
-//  Copyright © 2019 Denis Efremov. All rights reserved.
-//
-
 import UIKit
 
 class ContactInformation: UIView {
@@ -77,45 +69,5 @@ class ContactInformation: UIView {
         self.addSubview(lblCity)
         self.addSubview(lblPhone)
         self.addSubview(lblEmail)
-        //self.setupLayout()
-    }
-    
-    func setupLayout() {
-        NSLayoutConstraint.activate([
-            
-            // pin lblName to lblTitle
-            lblName.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
-            lblName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            lblName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            lblName.heightAnchor.constraint(equalToConstant: Constants.Dimentions.lblHeight),
-            
-            // pin lblAddress to lblName
-            lblAddress.topAnchor.constraint(equalTo: lblName.topAnchor, constant: 0),
-            lblAddress.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            lblAddress.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            lblAddress.heightAnchor.constraint(equalToConstant: Constants.Dimentions.lblHeight),
-            
-            // pin lblCity to lblAddress
-            lblCity.topAnchor.constraint(equalTo: lblAddress.topAnchor, constant: 0),
-            lblCity.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            lblCity.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            lblCity.heightAnchor.constraint(equalToConstant: Constants.Dimentions.lblHeight),
-            
-            // pin lblPhone to lblCity
-            lblPhone.topAnchor.constraint(equalTo: lblCity.topAnchor, constant: 0),
-            lblPhone.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            lblPhone.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            lblPhone.heightAnchor.constraint(equalToConstant: Constants.Dimentions.lblHeight),
-            
-            // pin lblEmail to lblPhone
-            lblEmail.topAnchor.constraint(equalTo: lblPhone.topAnchor, constant: 0),
-            lblEmail.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            lblEmail.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            lblEmail.heightAnchor.constraint(equalToConstant: Constants.Dimentions.lblHeight),
-        ])
-    }
-    
-    override class var requiresConstraintBasedLayout: Bool {
-        return true
     }
 }

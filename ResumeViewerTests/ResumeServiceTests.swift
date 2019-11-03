@@ -1,22 +1,12 @@
-//
-//  ResumeServiceTests.swift
-//  ResumeViewerTests
-//
-//  Created by Denis Efremov on 2019-11-02.
-//  Copyright © 2019 Denis Efremov. All rights reserved.
-//
-
 import XCTest
 @testable import ResumeViewer
 
 class ResumeServiceTests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testGetResume() {
@@ -34,11 +24,13 @@ class ResumeServiceTests: XCTestCase {
             print(error?.localizedDescription ?? "no error")
         }
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testGetResumeFailed() {
+        let service = MockResumeService()
+        
+        service.getResumeFromGist { (resume, error) in
+            XCTAssertNotNil(error, Constants.TestErrorMessages.getResumeFromGistErrorShouldNotBeNil)
+            XCTAssertNil(resume, Constants.TestErrorMessages.getResumeFromGistResumeShouldBeNil)
         }
     }
 

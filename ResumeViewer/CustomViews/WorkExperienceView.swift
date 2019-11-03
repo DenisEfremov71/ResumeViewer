@@ -1,11 +1,3 @@
-//
-//  WorkExperience.swift
-//  ResumeViewer
-//
-//  Created by Denis Efremov on 2019-11-02.
-//  Copyright © 2019 Denis Efremov. All rights reserved.
-//
-
 import UIKit
 
 class WorkExperienceView: UIView {
@@ -54,12 +46,12 @@ class WorkExperienceView: UIView {
     convenience init(logoURL: String, companyName: String, role: String, period: String, description: [String], frame: CGRect) {
         self.init(frame: frame)
         let url = URL(string: logoURL)
-        companyLogo.load(url: url!)
-        lblCompanyName.text = companyName
-        lblRole.text = role
-        lblPeriod.text = period
+        self.companyLogo.load(url: url!)
+        self.lblCompanyName.text = companyName
+        self.lblRole.text = role
+        self.lblPeriod.text = period
         for desc in description {
-            txtDescription.text = txtDescription.text + "\u{2022} " + desc + "\n\n"
+            self.txtDescription.text = self.txtDescription.text + "\u{2022} " + desc + "\n\n"
         }
     }
     

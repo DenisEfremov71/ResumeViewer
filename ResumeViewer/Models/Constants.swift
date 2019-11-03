@@ -1,11 +1,3 @@
-//
-//  Constants.swift
-//  ResumeViewer
-//
-//  Created by Denis Efremov on 2019-11-01.
-//  Copyright © 2019 Denis Efremov. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
@@ -31,7 +23,9 @@ struct Constants {
         static let fileExistsShouldNotBeFalse = "Result should not be false"
         static let fileExistsShouldNotBeTrue = "Result should not be true"
         static let getResumeFromGistErrorShouldBeNil = "Error should be nil"
-        static let getResumeFromGistResumeShouldNotBeNil = "Resume should be nil"
+        static let getResumeFromGistErrorShouldNotBeNil = "Error should not be nil"
+        static let getResumeFromGistResumeShouldBeNil = "Resume should be nil"
+        static let getResumeFromGistResumeShouldNotBeNil = "Resume should not be nil"
     }
     
     struct TestExpectations {
@@ -43,5 +37,7 @@ struct Constants {
         static let lblHeight: CGFloat = 20
         static let txtViewHeight: CGFloat = 350
         static let txtViewHeightTaller: CGFloat = 700
+        static let workExpViewHeight: CGFloat = 580
+        static let educationViewHeight: CGFloat = 120
     }
 }
